@@ -18,7 +18,7 @@ Select Android from the left column.
 
 Click Add.
 
-Select SlideDateTimePicker.
+Select SlideDayTimePicker.
 
 Click Apply and then OK.
 
@@ -138,7 +138,7 @@ License
 =======
 Licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
 
-Please see [LICENSE](https://github.com/jjobes/SlideDateTimePicker/blob/master/LICENSE)
+Please see [LICENSE](https://github.com/jjobes/SlideDayTimePicker/blob/master/LICENSE)
 
 Acknowledgements
 ================

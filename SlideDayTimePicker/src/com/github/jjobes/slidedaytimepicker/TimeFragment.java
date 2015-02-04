@@ -34,7 +34,7 @@ public class TimeFragment extends Fragment
     }
 
     private TimeChangedListener mCallback;
-    private CustomTimePicker mTimePicker;
+    private TimePicker mTimePicker;
 
     public TimeFragment()
     {
@@ -115,7 +115,7 @@ public class TimeFragment extends Fragment
         LayoutInflater localInflater = inflater.cloneInContext(contextThemeWrapper);
         View v = localInflater.inflate(R.layout.fragment_time, container, false);
 
-        mTimePicker = (CustomTimePicker) v.findViewById(R.id.timePicker);
+        mTimePicker = (TimePicker) v.findViewById(R.id.timePicker);
         // block keyboard popping up on touch
         mTimePicker.setDescendantFocusability(DatePicker.FOCUS_BLOCK_DESCENDANTS);
         mTimePicker.setOnTimeChangedListener(new TimePicker.OnTimeChangedListener() {

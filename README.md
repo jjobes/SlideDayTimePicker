@@ -11,21 +11,13 @@ SlideDayTimePicker is an Android library that displays a single DialogFragment i
 Setup
 =====
 
-**Eclipse/ADT**:
-From your main project, simply reference the SlideDayTimePicker library:
+To add this library to your project, add the following to your `build.gradle`:
 
-Right click on your project name and select Properties.
-
-Select Android from the left column.
-
-Click Add.
-
-Select SlideDayTimePicker.
-
-Click Apply and then OK.
-
-**Android Studio**:
-Coming soon.
+```groovy
+dependencies {
+    compile 'com.github.jjobes.slidedaytimepicker'
+}
+```
 
 How to Use
 ==========
@@ -33,7 +25,7 @@ How to Use
 
 First create a listener object:
 
-``` java
+```java
 final SlideDayTimeListener listener = new SlideDayTimeListener() {
 
     @Override
@@ -54,7 +46,7 @@ final SlideDayTimeListener listener = new SlideDayTimeListener() {
 
 Then pass the listener into the builder and show the dialog:
 
-``` java
+```java
 new SlideDayTimePicker.Builder(getSupportFragmentManager())
     .setListener(listener)
     .setInitialDay(1)
@@ -66,7 +58,7 @@ new SlideDayTimePicker.Builder(getSupportFragmentManager())
 
 **To set the initial day of week to display**
 
-``` java
+```java
 .setInitialDay(int)
 ```
 
@@ -74,14 +66,14 @@ The integer that you pass in to `setInitialDay()` should correspond to a `java.u
 
 **To set the initial hour to display:**
 
-``` java
+```java
 .setInitialHour(int)
 ```
 
 Acceptable range of values: 0-23
 
 **To set the initial minute to display:**
-``` java
+```java
 .setInitialMinute(int)
 ```
 
@@ -91,32 +83,32 @@ The default time format is the current device's default, but you can force a 24-
 
 **To force 24-hour time:**
 
-``` java
+```java
 .setIs24HourTime(true)
 ```
 
 **To force 12-hour time:**
-``` java
+```java
 .setIs24HourTime(false)
 ```
 
 **To display a custom days array:**
 By default, the dialog will display the normal seven days of the week. However, if you want to customize the days to display, you can pass in your own String array.
-``` java
+```java
 .setCustomDaysArray(String[])
 ```
 
 **The default theme is Holo Light, but you can specify either Holo Light or Dark explicitly:**
-``` java
+```java
 .setTheme(SlideDayTimePicker.HOLO_LIGHT)
 ```
 or
-``` java
+```java
 .setTheme(SlideDayTimePicker.HOLO_DARK)
 ```
 
 **To specify the color for the sliding tab underline (indicator):**
-``` java
+```java
 .setIndicatorColor(Color.parseColor("#FF0000"))
 ```
 
@@ -135,6 +127,9 @@ Translations are especially needed in `strings.xml`
 
 Changelog
 =========
+### v1.0.1
+
+* Changed to Android Studio / Gradle project
 
 ### v1.0.0
 
@@ -144,7 +139,12 @@ License
 =======
 Licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
 
-SlidingTabLayout.java and SlidingTabStrip.java are Copyright (C) 2013 The Android Open Source Project and are licensed under the Apache License, Version 2.0
+The following files:
+
+* SlidingTabLayout.java
+* SlidingTabStrip.java 
+
+are Copyright (C) 2013 The Android Open Source Project and are licensed under the Apache License, Version 2.0.
 
 Acknowledgements
 ================

@@ -127,6 +127,10 @@ Translations are especially needed in `strings.xml`
 
 Changelog
 =========
+### v1.0.2
+
+* Update build.gradle
+
 ### v1.0.1
 
 * Changed to Android Studio / Gradle project
